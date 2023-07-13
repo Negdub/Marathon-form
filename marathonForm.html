@@ -11,9 +11,9 @@
         <div>
 
             <label for="first">First Name</label>
-            <input type="text" id="first" name="firstname">
+            <input type="text" id="first" name="firstname" required>
             <label for="last">Last Name</label>
-            <input type="text" id="first" name="lastname">
+            <input type="text" id="first" name="lastname" required>
         </div>
         <p>Select a Race</p>
         <div>
@@ -29,7 +29,22 @@
             <input type="radio" name="race" id="full" value="full">
             <label for="full">Full Marathon</label>
         </div>
-        
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="division">Age Group</label>
+            <select name="division" id="division">
+                <option value="kids">Under 18</option>
+                <option value="adults">18-50</option>
+                <option value="senior">50+</option>
+            </select>
+        </div>
+        <button>Register</button>
     </form>
 </body>
 </html>
